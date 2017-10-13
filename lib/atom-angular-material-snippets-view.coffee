@@ -3,11 +3,11 @@ class atomAngularMaterialSnippetsView
   constructor: (serializedState) ->
     # Create root element
     @element = document.createElement('div')
-    @element.classList.add('atom-angular-material-snippets')
+    @element.classList.add('atom-angular-4-material-snippets')
 
     # Create message element
     message = document.createElement('div')
-    message.textContent = "The Atom Angular Material Snippets package is Alive! It's ALIVE!"
+    message.textContent = "The Atom Angular 4 Material Snippets package is Alive! It's ALIVE!"
     message.classList.add('message')
     @element.appendChild(message)
 

@@ -1,304 +1,304 @@
 '.text.html':
-    'md-autocomplete':
-        'prefix': 'md-autocomplete'
+    'mat-autocomplete':
+        'prefix': 'mat-autocomplete'
         'body': """
-            <md-autocomplete md-selected-item="${1:selectedItem}" md-search-text="${2:searchText}" md-items="${3:item in getMatches(searchText)}" md-item-text="${4:item.display}">
-              ${5:<md-item-template>
-              	${6:<span md-highlight-text="${7:searchText}">\{\{ ${8:item.display} \}\}</span>}
-              </md-item-template>}
-              ${9:<md-not-found>
+            <mat-autocomplete mat-selected-item="${1:selectedItem}" mat-search-text="${2:searchText}" mat-items="${3:item in getMatches(searchText)}" mat-item-text="${4:item.display}">
+              ${5:<mat-item-template>
+              	${6:<span mat-highlight-text="${7:searchText}">\{\{ ${8:item.display} \}\}</span>}
+              </mat-item-template>}
+              ${9:<mat-not-found>
               	${10:No Matches Found.}
-              </md-not-found>}
-            </md-autocomplete>
+              </mat-not-found>}
+            </mat-autocomplete>
         """
-    'md-button':
-        'prefix': 'md-button'
+    'mat-button':
+        'prefix': 'mat-button'
         'body': """
-            <md-button ${1:class="${2:md-raised|md-fab|md-mini}"} ${3:href="${4:http://google.com}"} ${5:ng-disabled="${6:true|false}"} aria-label="${7:description}" ${8:md-no-ink="${9:true|false}"} ${10:md-ripple-size="${11:full|partial|auto}"}>${12:content}</md-button>
+            <mat-button ${1:class="${2:mat-raised|mat-fab|mat-mini}"} ${3:href="${4:http://google.com}"} ${5:ng-disabled="${6:true|false}"} aria-label="${7:description}" ${8:mat-no-ink="${9:true|false}"} ${10:mat-ripple-size="${11:full|partial|auto}"}>${12:content}</mat-button>
         """
-    'md-card':
-            'prefix': 'md-card'
+    'mat-card':
+            'prefix': 'mat-card'
             'body': """
-                <md-card>
-                	${1:<img class="md-card-image" src="${2:card-image.png}" alt="${3:image caption}">}
-                	<md-card-content>
+                <mat-card>
+                	${1:<img class="mat-card-image" src="${2:card-image.png}" alt="${3:image caption}">}
+                	<mat-card-content>
                 		<h2>${4:Card headline}</h2>
                 		<p>${5:Card content}</p>
-                	</md-card-content>
-                	${6:<md-card-footer>
+                	</mat-card-content>
+                	${6:<mat-card-footer>
                 	${7:Card footer}
-                	</md-card-footer>}
-                	${8:<div class="md-actions" layout="${9:row|column}" layout-align="${10:start|end|center} ${11:start|end|center}">
-                	   ${12:<md-button>${13:content}</md-button>}
+                	</mat-card-footer>}
+                	${8:<div class="mat-actions" layout="${9:row|column}" layout-align="${10:start|end|center} ${11:start|end|center}">
+                	   ${12:<mat-button>${13:content}</mat-button>}
                 	 </div>}
-                </md-card>
+                </mat-card>
             """
-    'md-checkbox':
-        'prefix': 'md-checkbox'
+    'mat-checkbox':
+        'prefix': 'mat-checkbox'
         'body': """
-            <md-checkbox ${1:md-no-ink} ${2:ng-true-value="${3:expr}" ng-false-value="${4:expr}"} ng-model="${5:variable}" ${6:name="${7:string}"} ${8:ng-change="${9:expr}"} ${10:ng-disabled="${11:boolean}"} aria-label="${12:string}">
+            <mat-checkbox ${1:mat-no-ink} ${2:ng-true-value="${3:expr}" ng-false-value="${4:expr}"} ng-model="${5:variable}" ${6:name="${7:string}"} ${8:ng-change="${9:expr}"} ${10:ng-disabled="${11:boolean}"} aria-label="${12:string}">
             	${13:content}
-            </md-checkbox>
+            </mat-checkbox>
         """
-    'md-chips':
-        'prefix': 'md-chips'
+    'mat-chips':
+        'prefix': 'mat-chips'
         'body': """
-            <md-chips ${1:ng-model="${2:string|object}"} ${3:md-on-append="${4:expr}"} ${5:placeholder="${6:string}"} ${7:secondary-placeholder="${8:string}"} ${9:readonly="${10:boolean}"} ${11:md-on-remove="${12:expr}" ${13:md-on-select="${14:expr}"}} ${15:delete-hint="${16:string}" ${17:delete-button-label="${18:string}"}}>
-            	${19:<md-chip-template>
+            <mat-chips ${1:ng-model="${2:string|object}"} ${3:mat-on-append="${4:expr}"} ${5:placeholder="${6:string}"} ${7:secondary-placeholder="${8:string}"} ${9:readonly="${10:boolean}"} ${11:mat-on-remove="${12:expr}" ${13:mat-on-select="${14:expr}"}} ${15:delete-hint="${16:string}" ${17:delete-button-label="${18:string}"}}>
+            	${19:<mat-chip-template>
             		${20:content}
-            	</md-chip-template>}
-            	${21:<button md-chip-remove class="${22:md-primary vegetablechip}">
-                	${23:<md-icon>close</md-icon>}
+            	</mat-chip-template>}
+            	${21:<button mat-chip-remove class="${22:mat-primary vegetablechip}">
+                	${23:<mat-icon>close</mat-icon>}
               	</button>}
-              	${24:<md-chip>${25:content}</md-chip>}
-            </md-chips>
+              	${24:<mat-chip>${25:content}</mat-chip>}
+            </mat-chips>
         """
-    'md-contact-chips':
-        'prefix': 'md-contact-chips'
+    'mat-contact-chips':
+        'prefix': 'mat-contact-chips'
         'body': """
-            <md-contact-chips ng-model="${1:variable}" md-contacts="${2:searchFunction}" md-contact-name="${3:string}" md-contact-image="${4:string}" md-contact-email="${5:string}" ${6:md-require-match="${7:boolean}" md-highlight-flags="${8:string}" filter-selected="${9:filterFunction}" placeholder="${10:string}"}>
-            </md-contact-chips>
+            <mat-contact-chips ng-model="${1:variable}" mat-contacts="${2:searchFunction}" mat-contact-name="${3:string}" mat-contact-image="${4:string}" mat-contact-email="${5:string}" ${6:mat-require-match="${7:boolean}" mat-highlight-flags="${8:string}" filter-selected="${9:filterFunction}" placeholder="${10:string}"}>
+            </mat-contact-chips>
         """
-    'md-content':
-        'prefix': 'md-content'
+    'mat-content':
+        'prefix': 'mat-content'
         'body': """
-            <md-content ${1:layout-padding} ${2:layout-wrap}>
+            <mat-content ${1:layout-padding} ${2:layout-wrap}>
                 ${3:Lorem ipsum dolor sit amet, ne quod novum mei}
-            </md-content>
+            </mat-content>
         """
-    'md-datepicker':
-        'prefix': 'md-datepicker'
+    'mat-datepicker':
+        'prefix': 'mat-datepicker'
         'body': """
-            <md-datepicker ng-model="${1:variable}" ${2:ng-change="${3:expr}" md-min-date="${4:Date}" md-max-date="${5:Date}" disabled="${6:boolean}" required="${7:boolean}"}></md-datepicker>
+            <mat-datepicker ng-model="${1:variable}" ${2:ng-change="${3:expr}" mat-min-date="${4:Date}" mat-max-date="${5:Date}" disabled="${6:boolean}" required="${7:boolean}"}></mat-datepicker>
         """
-    'md-divider':
-        'prefix': 'md-divider'
+    'mat-divider':
+        'prefix': 'mat-divider'
         'body': """
-            <md-divider ${1:md-inset}></md-divider>
+            <mat-divider ${1:mat-inset}></mat-divider>
         """
-    'md-grid-list':
-        'prefix': 'md-grid-list'
+    'mat-grid-list':
+        'prefix': 'mat-grid-list'
         'body': """
-            <md-grid-list md-cols="${1:number}" md-gutter="${2:string}" md-row-height="${3:string}" md-on-layout="${4:expr}">
-                ${5:<md-grid-tile>$6</md-grid-tile>}
-            </md-grid-list>
+            <mat-grid-list mat-cols="${1:number}" mat-gutter="${2:string}" mat-row-height="${3:string}" mat-on-layout="${4:expr}">
+                ${5:<mat-grid-tile>$6</mat-grid-tile>}
+            </mat-grid-list>
         """
-    'md-grid-tile':
-        'prefix': 'md-grid-tile'
+    'mat-grid-tile':
+        'prefix': 'mat-grid-tile'
         'body': """
-            <md-grid-tile ${1:md-colspan="${2:number}"} ${3:md-rowspan="${4:number}"}>
-            	${5:<md-grid-tile-header>
+            <mat-grid-tile ${1:mat-colspan="${2:number}"} ${3:mat-rowspan="${4:number}"}>
+            	${5:<mat-grid-tile-header>
             		${6:<h3>$7</h3>}
-            	</md-grid-tile-header>}
-              	${8:<md-grid-tile-footer>
+            	</mat-grid-tile-header>}
+              	${8:<mat-grid-tile-footer>
               		${9:<h3>$10</h3>}
-              	</md-grid-tile-footer>}
-            </md-grid-tile>
+              	</mat-grid-tile-footer>}
+            </mat-grid-tile>
         """
-    'md-highlight-text':
-        'prefix': 'md-highlight-text'
+    'mat-highlight-text':
+        'prefix': 'mat-highlight-text'
         'body': """
             <input ${1:placeholder="${2:Enter a search term...}"} ${3:ng-model="${4:searchTerm}"} type="${5:text}">
             <ul>
-              <li md-highlight-text="${4:searchTerm}">$5</li>
+              <li mat-highlight-text="${4:searchTerm}">$5</li>
             </ul>
         """
-    'md-icon-ligature':
-        'prefix': 'md-icon-ligature'
+    'mat-icon-ligature':
+        'prefix': 'mat-icon-ligature'
         'body': """
-            <md-icon class="${1:material-icons step}" aria-label="${2:description}">${3:font-name}</md-icon>
+            <mat-icon class="${1:material-icons step}" aria-label="${2:description}">${3:font-name}</mat-icon>
         """
-    'md-icon-svg':
-        'prefix': 'md-icon-svg'
+    'mat-icon-svg':
+        'prefix': 'mat-icon-svg'
         'body': """
-            <md-icon md-svg-icon="${1:alarm}" style="${2:color: #0F0;}" aria-label="${3:Alarm Icon}"></md-icon>
+            <mat-icon mat-svg-icon="${1:alarm}" style="${2:color: #0F0;}" aria-label="${3:Alarm Icon}"></mat-icon>
         """
-    'md-icon-url':
-        'prefix': 'md-icon-url'
+    'mat-icon-url':
+        'prefix': 'mat-icon-url'
         'body': """
-            <md-icon class="${1:step img}" md-font-icon="${2:font.name}" aria-label="${3:description}"></md-icon>
+            <mat-icon class="${1:step img}" mat-font-icon="${2:font.name}" aria-label="${3:description}"></mat-icon>
         """
-    'md-input-container':
-        'prefix': 'md-input-container'
+    'mat-input-container':
+        'prefix': 'mat-input-container'
         'body': """
-            <md-input-container>
+            <mat-input-container>
             	${1:<label>${2:Username}</label>
             	<input type="text" ${3:ng-model="${4:user.name}"}>}
-            </md-input-container>
+            </mat-input-container>
         """
-    'md-input':
-        'prefix': 'md-input'
+    'mat-input':
+        'prefix': 'mat-input'
         'body': """
             <label>$1</label>
-            <input name="$2" ng-model="$3" placeholder="$4" required md-maxlength="$5" minlength="$6">
+            <input name="$2" ng-model="$3" placeholder="$4" required mat-maxlength="$5" minlength="$6">
         """
-    'md-list-item':
-        'prefix': 'md-list-item'
+    'mat-list-item':
+        'prefix': 'mat-list-item'
         'body': """
-            <md-list-item class="md-2-line" ng-repeat="$1">
+            <mat-list-item class="mat-2-line" ng-repeat="$1">
               $2
-            </md-list-item>
+            </mat-list-item>
         """
-    'md-list':
-        'prefix': 'md-list'
+    'mat-list':
+        'prefix': 'mat-list'
         'body': """
-            <md-list>
+            <mat-list>
               $1
-            </md-list>
+            </mat-list>
         """
-    'md-menu':
-        'prefix': 'md-menu'
+    'mat-menu':
+        'prefix': 'mat-menu'
         'body': """
-            <md-menu md-offset="0 0">
-                <!-- Trigger element is a md-button with an icon -->
-                <md-button ng-click="$mdOpenMenu()" class="md-icon-button" aria-label="Open sample menu">
-                    <md-icon md-svg-icon="call:phone"></md-icon>
-                </md-button>
-                <md-menu-content>
-                    <md-menu-item><md-button ng-click="doSomething()">Do Something</md-button></md-menu-item>
-                </md-menu-content>
-            </md-menu>
+            <mat-menu mat-offset="0 0">
+                <!-- Trigger element is a mat-button with an icon -->
+                <mat-button ng-click="$mdOpenMenu()" class="mat-icon-button" aria-label="Open sample menu">
+                    <mat-icon mat-svg-icon="call:phone"></mat-icon>
+                </mat-button>
+                <mat-menu-content>
+                    <mat-menu-item><mat-button ng-click="doSomething()">Do Something</mat-button></mat-menu-item>
+                </mat-menu-content>
+            </mat-menu>
         """
-    'md-progress-circular':
-        'prefix': 'md-progress-circular'
+    'mat-progress-circular':
+        'prefix': 'mat-progress-circular'
         'body': """
-            <md-progress-circular md-mode="determinate" value="$1" ng-value="$2" md-diameter="48"></md-progress-circular>
-            <!--For operations where the user is asked to wait a moment while something finishes up, and it’s not necessary to expose what's happening behind the scenes and how long it will take, use an md-mode="indeterminate" indicator.-->
+            <mat-progress-circular mat-mode="determinate" value="$1" ng-value="$2" mat-diameter="48"></mat-progress-circular>
+            <!--For operations where the user is asked to wait a moment while something finishes up, and it’s not necessary to expose what's happening behind the scenes and how long it will take, use an mat-mode="indeterminate" indicator.-->
         """
-    'md-radio-button':
-        'prefix': 'md-radio-button'
+    'mat-radio-button':
+        'prefix': 'mat-radio-button'
         'body': """
-            <md-radio-button ng-model="$1" ng-value="$2" aria-label="$3">$4</md-radio-button>
+            <mat-radio-button ng-model="$1" ng-value="$2" aria-label="$3">$4</mat-radio-button>
         """
-    'md-select':
-        'prefix': 'md-select'
+    'mat-select':
+        'prefix': 'mat-select'
         'body': """
-            <md-select ng-model="$1"> <!--md-on-close: expression; multiple:boolean; placeholder: string;-->
-                <md-select-label>Select a state</md-select-label>
-                <md-option ng-value="opt" ng-repeat="opt in options">{{ opt }}</md-option>
-            </md-select>
+            <mat-select ng-model="$1"> <!--mat-on-close: expression; multiple:boolean; placeholder: string;-->
+                <mat-select-label>Select a state</mat-select-label>
+                <mat-option ng-value="opt" ng-repeat="opt in options">{{ opt }}</mat-option>
+            </mat-select>
         """
-    'md-sidenav':
-        'prefix': 'md-sidenav'
+    'mat-sidenav':
+        'prefix': 'mat-sidenav'
         'body': """
             <div layout="row" ng-controller="MyController">
-                <md-sidenav md-component-id="left" class="md-sidenav-left">
+                <mat-sidenav mat-component-id="left" class="mat-sidenav-left">
                     Left Nav!
-                </md-sidenav>
-                <md-content>
+                </mat-sidenav>
+                <mat-content>
                     Center Content
-                    <md-button ng-click="openLeftMenu()">
+                    <mat-button ng-click="openLeftMenu()">
                         Open Left Menu
-                    </md-button>
-                </md-content>
-                <md-sidenav md-component-id="right" md-is-locked-open="$mdMedia('min-width: 333px')" class="md-sidenav-right">
+                    </mat-button>
+                </mat-content>
+                <mat-sidenav mat-component-id="right" mat-is-locked-open="$mdMedia('min-width: 333px')" class="mat-sidenav-right">
                     <form>
-                        <md-input-container>
+                        <mat-input-container>
                             <label for="testInput">Test input</label>
-                            <input id="testInput" type="text" ng-model="data" md-sidenav-focus>
-                        </md-input-container>
+                            <input id="testInput" type="text" ng-model="data" mat-sidenav-focus>
+                        </mat-input-container>
                     </form>
-                </md-sidenav>
+                </mat-sidenav>
             </div>
         """
-    'md-subheader':
-        'prefix': 'md-subheader'
+    'mat-subheader':
+        'prefix': 'mat-subheader'
         'body': """
-            <md-subheader>$1</md-subheader>
-            <!--You can use md-no-sticky class-->
+            <mat-subheader>$1</mat-subheader>
+            <!--You can use mat-no-sticky class-->
         """
-    'md-slider':
-        'prefix': 'md-slider'
+    'mat-slider':
+        'prefix': 'mat-slider'
         'body': """
-            <md-slider md-discrete ng-model="myDiscreteValue" step="$1" min="$2" max="$3"></md-slider>
+            <mat-slider mat-discrete ng-model="myDiscreteValue" step="$1" min="$2" max="$3"></mat-slider>
         """
-    'md-swipe-left':
-        'prefix': 'md-swipe-left'
+    'mat-swipe-left':
+        'prefix': 'mat-swipe-left'
         'body': """
-            <div md-swipe-left="onSwipeLeft()">$1</div>
+            <div mat-swipe-left="onSwipeLeft()">$1</div>
         """
-    'md-swipe-right':
-        'prefix': 'md-swipe-right'
+    'mat-swipe-right':
+        'prefix': 'mat-swipe-right'
         'body': """
-            <div md-swipe-right="onSwipeRight()">$1</div>
+            <div mat-swipe-right="onSwipeRight()">$1</div>
         """
-    'md-switch':
-        'prefix': 'md-switch'
+    'mat-switch':
+        'prefix': 'mat-switch'
         'body': """
-            <md-switch ng-model="$1" aria-label="$2">
+            <mat-switch ng-model="$1" aria-label="$2">
                 $3
-            </md-switch>
+            </mat-switch>
         """
-    'md-tab':
-        'prefix': 'md-tab'
+    'mat-tab':
+        'prefix': 'mat-tab'
         'body': """
-            <md-tab label="" disabled md-on-select="" md-on-deselect="">
-                <md-tab-label>
+            <mat-tab label="" disabled mat-on-select="" mat-on-deselect="">
+                <mat-tab-label>
                     <h3>$1</h3>
-                </md-tab-label>
-                <md-tab-body>
+                </mat-tab-label>
+                <mat-tab-body>
                     <p>
                         $2
                     </p>
-                </md-tab-body>
-            </md-tab>
+                </mat-tab-body>
+            </mat-tab>
         """
-    'md-tabs':
-        'prefix': 'md-tabs'
+    'mat-tabs':
+        'prefix': 'mat-tabs'
         'body': """
-            <md-tabs md-selected="selectedIndexInteger">
+            <mat-tabs mat-selected="selectedIndexInteger">
                 $1
-            </md-tabs>
-            <!-- md-tabs attributes you can use:
-            md-selected - integer - Index of the active/selected tab
-            md-no-ink - boolean - If present, disables ink ripple effects.
-            md-no-bar - boolean -If present, disables the selection ink bar.
-            md-align-tabs string - Attribute to indicate position of tab buttons: bottom or top; default is top
-            md-stretch-tabs string - Attribute to indicate whether or not to stretch tabs: auto, always, or never; default is auto
-            md-dynamic-height - boolean - When enabled, the tab wrapper will resize based on the contents of the selected tab
-            md-center-tabs - boolean - When enabled, tabs will be centered provided there is no need for pagination
-            md-no-pagination - boolean - When enabled, pagination will remain off
-            md-swipe-content - boolean - When enabled, swipe gestures will be enabled for the content area to jump between tabs
-            md-no-disconnect - boolean - If your tab content has background tasks (ie. event listeners), you will want to include this to prevent the scope from being disconnected
-            md-autoselect - boolean - When present, any tabs added after the initial load will be automatically selected
+            </mat-tabs>
+            <!-- mat-tabs attributes you can use:
+            mat-selected - integer - Index of the active/selected tab
+            mat-no-ink - boolean - If present, disables ink ripple effects.
+            mat-no-bar - boolean -If present, disables the selection ink bar.
+            mat-align-tabs string - Attribute to indicate position of tab buttons: bottom or top; default is top
+            mat-stretch-tabs string - Attribute to indicate whether or not to stretch tabs: auto, always, or never; default is auto
+            mat-dynamic-height - boolean - When enabled, the tab wrapper will resize based on the contents of the selected tab
+            mat-center-tabs - boolean - When enabled, tabs will be centered provided there is no need for pagination
+            mat-no-pagination - boolean - When enabled, pagination will remain off
+            mat-swipe-content - boolean - When enabled, swipe gestures will be enabled for the content area to jump between tabs
+            mat-no-disconnect - boolean - If your tab content has background tasks (ie. event listeners), you will want to include this to prevent the scope from being disconnected
+            mat-autoselect - boolean - When present, any tabs added after the initial load will be automatically selected
             -->
         """
-    'md-toolbar':
-        'prefix': 'md-toolbar'
+    'mat-toolbar':
+        'prefix': 'mat-toolbar'
         'body': """
             <div layout="column" layout-fill>
-                <md-toolbar md-scroll-shrink md-shrink-speed-factor="0.5">
-                 	<md-button class="md-icon-button" aria-label="Settings">
-                        <md-icon md-svg-icon="img/icons/menu.svg"></md-icon>
-                    </md-button>
+                <mat-toolbar mat-scroll-shrink mat-shrink-speed-factor="0.5">
+                 	<mat-button class="mat-icon-button" aria-label="Settings">
+                        <mat-icon mat-svg-icon="img/icons/menu.svg"></mat-icon>
+                    </mat-button>
                     <h2>
                       <span>Toolbar with Icon Buttons</span>
                     </h2>
                     <span flex></span>
-                    <md-button class="md-icon-button" aria-label="Favorite">
-                        <md-icon md-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></md-icon>
-                    </md-button>
-                    <md-button class="md-icon-button" aria-label="More">
-                        <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
-                    </md-button>
-                </md-toolbar>
-                <!--Note: for scrollShrink to work, the toolbar must be a sibling of a md-content element, placed before it.-->
-                <md-content>
+                    <mat-button class="mat-icon-button" aria-label="Favorite">
+                        <mat-icon mat-svg-icon="img/icons/favorite.svg" style="color: greenyellow;"></mat-icon>
+                    </mat-button>
+                    <mat-button class="mat-icon-button" aria-label="More">
+                        <mat-icon mat-svg-icon="img/icons/more_vert.svg"></mat-icon>
+                    </mat-button>
+                </mat-toolbar>
+                <!--Note: for scrollShrink to work, the toolbar must be a sibling of a mat-content element, placed before it.-->
+                <mat-content>
                     Hello!
-                </md-content>
+                </mat-content>
             </div>
         """
-    'md-tooltip':
-        'prefix': 'md-tooltip'
+    'mat-tooltip':
+        'prefix': 'mat-tooltip'
         'body': """
-            <md-tooltip md-visible="true" md-delay="400" md-direction="bottom" md-autohide="true">
+            <mat-tooltip mat-visible="true" mat-delay="400" mat-direction="bottom" mat-autohide="true">
                 $1
-            </md-tooltip>
+            </mat-tooltip>
         """
-    'md-whiteframe':
-        'prefix': 'md-whiteframe'
+    'mat-whiteframe':
+        'prefix': 'mat-whiteframe'
         'body': """
-            <md-whiteframe class="md-whiteframe-z1" layout layout-align="center center">
+            <mat-whiteframe class="mat-whiteframe-z1" layout layout-align="center center">
                 $1
-            </md-whiteframe>
+            </mat-whiteframe>
         """

@@ -1,4 +1,4 @@
-atomAngularMaterialSnippetsView = require './atom-angular-material-snippets-view'
+atomAngularMaterialSnippetsView = require './atom-angular-4-material-snippets-view'
 {CompositeDisposable} = require 'atom'
 
 module.exports = atomAngularMaterialSnippets =

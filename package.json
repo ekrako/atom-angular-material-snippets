@@ -1,18 +1,19 @@
 {
-  "name": "atom-angular-material-snippets",
-  "main": "./lib/atom-angular-material-snippets",
-  "version": "1.3.0",
-  "description": "Angular Material snippets for Atom",
+  "name": "atom-angular-4-material-snippets",
+  "main": "./lib/atom-angular-4-material-snippets",
+  "version": "0.0.1",
+  "description": "Angular Material snippets for Atom for Angular 4",
   "keywords": [
     "Angular Material",
+    "Angular 4",
     "Atom",
     "Snippets",
     "Auto Complete"
   ],
   "activationCommands": {
-    "atom-workspace": "atom-angular-material-snippets:toggle"
+    "atom-workspace": "atom-angular-4-material-snippets:toggle"
   },
-  "repository": "https://github.com/smkamranqadri/atom-angular-material-snippets.git",
+  "repository": "https://github.com/ekrako/atom-angular-material-snippets.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -21,9 +22,9 @@
   "readme": "# atom-angular-material-snippets package\n\nThis is a snippets package for Atom, providing snippets for Angular Material.\n",
   "readmeFilename": "README.md",
   "bugs": {
-    "url": "https://github.com/smkamranqadri/atom-angular-material-snippets/issues"
+    "url": "https://github.com/ekrako/atom-angular-material-snippets/issues"
   },
-  "homepage": "https://github.com/smkamranqadri/atom-angular-material-snippets#readme",
+  "homepage": "https://github.com/ekrako/atom-angular-material-snippets#readme",
   "_id": "atom-angular-material-snippets@0.0.1",
   "_atomModuleCache": {
     "version": 1,

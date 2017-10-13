@@ -2,7 +2,7 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle atom-angular-material-snippets'
+      'label': 'Toggle atom-angular-4-material-snippets'
       'command': 'atom-angular-material-snippets:toggle'
     }
   ]
@@ -10,11 +10,11 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'atom-angular-material-snippets'
+      'label': 'atom-angular-4-material-snippets'
       'submenu': [
         {
           'label': 'Toggle'
-          'command': 'atom-angular-material-snippets:toggle'
+          'command': 'atom-angular-4-material-snippets:toggle'
         }
       ]
     ]

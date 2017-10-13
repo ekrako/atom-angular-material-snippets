@@ -1,19 +1,18 @@
 # Angular Material Snippets for Atom
 
-Generate Angular Material snippets for &lt;md-button&gt;, &lt;md-input&gt;, &lt;md-icon&gt;, etc
+Generate Angular Material snippets for &lt;mat-button&gt;, &lt;mat-input&gt;, &lt;mat-icon&gt;, etc
 
-Collaborators are welcome to add and improve snippets for directives. All snippets should be based on the directives described in this documentation: https://material.angularjs.org/latest/#/
+Collaborators are welcome to add and improve snippets for directives. All snippets should be based on the directives described in this documentation: https://material.angular.io/
 
 ## Usage
 
-Start typing `md-` in html files and the autocomplete window opens or use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to autocomplete.
+Start typing `mat-` in html files and the autocomplete window opens or use <kbd>Ctrl</kbd>+<kbd>Space</kbd> to autocomplete.
 
 ## Snippets
 
-Initial snippets taken from [Sublime Angular Material Snippets](https://github.com/devotis/sublime-angular-material-snippets/blob/master/directives)
-- md-autocomplete
-- md-button
-- md-card
+- mat-autocomplete
+- mat-button
+- mat-card
 etc...
 
 
